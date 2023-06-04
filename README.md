@@ -1,2 +1,2 @@
-# Example
-An example greeter plugin
+# KamiTools
+An KamiTools greeter plugin
