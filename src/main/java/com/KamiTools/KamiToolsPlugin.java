@@ -37,6 +37,7 @@ import net.runelite.client.ui.overlay.OverlayManager;
 import net.runelite.client.util.ImageUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import net.runelite.client.plugins.antidrag.*;
 
 @PluginDescriptor(
 		name = "KamiTools"
