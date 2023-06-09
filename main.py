@@ -36,9 +36,13 @@ def renameDir(dir, find, replace):
             os.chdir("..")
 
 path = os.path.dirname(__file__)
+projectName = path[path.rfind('\\RL_')+4:]
 arrFind = ["KamiTools", "kamiTools", "Kami Screen Markers", "kamiscreenmarkers", "kamimarkers"]
 arrReplace = ["KamiXXX", "kamiXXX", "Kami XXX", "kamiXXXgroup", "kamiXXXkey"]
+for i in range(len(arrReplace)):
+    arrReplace[i] = arrReplace[i].replace("XXX", projectName)
 for i in range(len(arrFind)):
     findReplace(path, arrFind[i], arrReplace[i])
     renameFiles(path, arrFind[i], arrReplace[i])
     renameDir(path, arrFind[i], arrReplace[i])
+
